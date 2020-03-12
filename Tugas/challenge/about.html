@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <center>
+            <fieldset>
+                <legend>Biodata</legend>
+                <p>Nama:    I Wayan Eka Arimbawa</p>
+                <p>NIM :    1801010007</p>
+                <p>Prodi:   Sistem Informasi</p>
+                <img src="gambar2.jpg" width="400">
+            </fieldset>
+        </center>
+    </body>
+    <script>
+        const electron = require("electron");
+    const {ipcRenderer} = electron;
+    ipcRenderer.send("appointment:about");
+    </script>
+</html>
